@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "gridworld-rl-env"
 version = "0.1.0"
 description = "Gridworld RL environment"
-authors = [{ name = "Your Name" }]
+authors = [{ name = "Aryan" }]
 requires-python = ">=3.10"
 
 dependencies = [
@@ -16,6 +16,9 @@ dependencies = [
     "pydantic",
     "openenv-core>=0.2.0"
 ]
+
+[project.scripts]
+server = "server.app:app"
 
 [tool.setuptools]
 packages = ["app"]
