@@ -3,10 +3,9 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gridworld-rl-env"
+name = "gridworld-openenv"
 version = "0.1.0"
-description = "Gridworld RL environment"
-authors = [{ name = "Aryan" }]
+description = "OpenEnv Gridworld"
 requires-python = ">=3.10"
 
 dependencies = [
@@ -21,5 +20,4 @@ dependencies = [
 server = "server.app:app"
 
 [tool.setuptools]
-packages = ["app", "server"]
-# final fix
+packages = ["server", "app"]
