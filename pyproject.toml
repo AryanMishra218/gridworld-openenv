@@ -1,0 +1,36 @@
+[project]
+name = "gridworld-rl-env"
+version = "0.1.0"
+description = "OpenEnv-compatible 2D GridWorld RL environment with FastAPI and Docker"
+authors = [
+    { name="Your Name", email="your_email@example.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+keywords = ["reinforcement-learning", "fastapi", "gridworld", "docker", "rl-agent"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: FastAPI",
+    "Topic :: Software Development :: Simulation",
+]
+
+# Dependencies required to run the project
+dependencies = [
+    "fastapi>=0.101.0",
+    "uvicorn>=0.25.0",
+    "numpy>=1.25.0",
+    "pydantic>=2.5.0",
+    "requests>=2.32.0"
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["app"]
+
+[tool.setuptools]
+package-dir = {"" = "app"}
