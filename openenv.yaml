@@ -1,0 +1,41 @@
+name: autonomous-navigation-env
+
+tasks:
+  - easy
+  - medium
+  - hard
+
+observation_space:
+  type: object
+  properties:
+    agent:
+      type: array
+      items: integer
+    goal:
+      type: array
+      items: integer
+    obstacles:
+      type: array
+      items:
+        type: array
+        items: integer
+    traps:
+      type: array
+      items:
+        type: array
+        items: integer
+    enemy:
+      type: array
+      items: integer
+
+
+action_space:
+  type: integer
+  enum: [0,1,2,3]
+
+reward_range: [0.0, 1]
+
+endpoints:
+  reset: POST /reset
+  step: POST /step
+  state: GET /state
