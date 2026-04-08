@@ -22,3 +22,4 @@ server = "server.app:app"
 
 [tool.setuptools]
 packages = ["app", "server"]
+# final fix
