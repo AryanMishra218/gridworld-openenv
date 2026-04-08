@@ -21,4 +21,4 @@ dependencies = [
 server = "server.app:app"
 
 [tool.setuptools]
-packages = ["app"]
+packages = ["app", "server"]
